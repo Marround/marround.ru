@@ -1,0 +1,56 @@
+h1 {
+  font-family: 'Capture it', arial;
+}
+@media (min-width: 400px) {
+  h1 {
+    font-size: calc(1em + 5vw);
+  }
+}
+@media (max-width: 399px) {
+  h1 {
+    font-size: calc(0.7em + 5vw);
+  }
+}
+video{
+  position: absolute;
+  z-index:-1;
+  min-width:100%;
+  min-height:100%;
+  overflow:hidden;
+  margin: -52px 0 0 0;
+}
+a {
+  color: #222222;
+  margin-left: 10px;
+}
+.mcmh {
+  min-height: calc(100vh - 154px);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.bkg-1 {
+  background: linear-gradient(to top left, rgba(255, 191, 204, .7), rgba(176, 224, 230, 0.7));
+}
+.content-block {
+  font-family: 'Capture it', arial;
+  max-width: 1230px !important;
+  padding: 0 15px !important;
+  margin: 0 auto !important;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+.card, .fb-notice {
+  font-family: "Open Sans";
+}
+.card {
+  background: none;
+  border: none;
+}
+

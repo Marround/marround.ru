@@ -1,0 +1,90 @@
+<div class="mcmh bkg-1">
+  <video autoplay loop>
+    <source src="assets/video/bkg.mp4" type="video/mp4">
+  </video>
+  <div class="content-block">
+    <div class="container-fluid d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center">Мои контакты</h1>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col border border-dark mr-xl-2 mr-lg-2 mr-md-2 fb-bkg">
+                <mat-list role="list">
+                  <mat-list-item role="listitem">
+                    <mat-icon>smartphone</mat-icon>
+                    <a href="tel:89202055125" target="_blank" class="fb-link">8 (920) 205-51-25</a>
+                  </mat-list-item>
+                  <mat-list-item role="listitem">
+                    <img src="/assets/img/icons/telegram.png" width="24">
+                    <a href="https://t.me/marround" target="_blank" class="fb-link">Telegram: @marround</a>
+                  </mat-list-item>
+                  <mat-list-item role="listitem">
+                    <mat-icon>mail_outline</mat-icon>
+                    <a href="mailto:marround@yandex.ru" target="_blank" class="fb-link">marround@yandex.ru</a>
+                  </mat-list-item>
+                  <mat-list-item role="listitem">
+                    <img src="/assets/img/icons/skype.png" width="24">
+                    <a href="skype:marround?call" class="fb-link">Skype:marround</a>
+                  </mat-list-item>
+                  <mat-list-item role="listitem">
+                    <img src="/assets/img/icons/vk.png" width="24">
+                    <a href="https://vk.com/marround" class="fb-link" target="_blank">vk.com/marround</a>
+                  </mat-list-item>
+                  <mat-list-item>
+                    <mat-icon>query_builder</mat-icon>
+                    <a class="fb-link">ПН-ПТ: 09:00 - 18:00</a>
+                  </mat-list-item>
+                </mat-list>
+                <div class="fb-notice">
+                  <p><strong>У Вас возникли вопросы или Вы уже знаете что хотите - позвоните, напишите или заполните форму обратной связи! Я отвечу на все Ваши вопросы, консультация всегда будет бесплатной.</strong></p>
+                </div>
+              </div>
+              <div class="w-100 m-2 d-xl-none d-lg-none"></div>
+              <div class="col border border-dark fb-bkg">
+                <!--Form with header-->
+                <div class="card">
+                  <div class="col-lg-12 mb-5">
+                    <h2 class="text-center">Оставьте заявку </h2>
+                    <form>
+                      <div class="feedback-form">
+                        <mat-form-field>
+                          <span matPrefix><mat-icon class="sky-blue">account_circle</mat-icon>&nbsp;&nbsp;</span>
+                          <input matInput #uname placeholder="Ваше имя" maxlength="70" name="uName" [(ngModel)]="uName" required>
+                          <mat-hint align="end">{{uname.value.length}} / 70</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                          <span matPrefix><mat-icon class="sky-blue">mail_outline</mat-icon>&nbsp;&nbsp;</span>
+                          <input matInput #mailfield placeholder="Email" maxlength="50" name="email" [(ngModel)]="email" required>
+                          <mat-hint align="end">{{mailfield.value.length}} / 50</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                          <span matPrefix>+7 &nbsp;</span>
+                          <input type="tel" matInput #phonenumber placeholder="Телефон" maxlength="10" name="phone" [(ngModel)]="phone" required>
+                          <mat-hint align="end">{{phonenumber.value.length}} / 10</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                          <textarea matInput #message placeholder="Текст сообщения" maxlength="256" rows="7" name="textMessage" [(ngModel)]="textMessage" required></textarea>
+                          <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                        </mat-form-field>
+
+                      </div>
+                      <br>
+                      <button mat-fab color="primary" class="float-right align-bottom" (click)="sendMessage(uName, email, phone, textMessage)"><mat-icon>send</mat-icon></button>
+                    </form>
+                  </div>
+                </div>
+                <!--Form with header-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

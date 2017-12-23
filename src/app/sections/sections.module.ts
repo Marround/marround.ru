@@ -8,6 +8,8 @@ import {
 } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { ServicesComponent } from './services/services.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 
 
@@ -25,8 +27,8 @@ import { HomeComponent } from './home/home.component';
     MatSelectModule,
     FormsModule
   ],
-  declarations: [HomeComponent],
-  exports: [HomeComponent]
+  declarations: [HomeComponent, ServicesComponent, ContactsComponent],
+  exports: [HomeComponent, ServicesComponent, ContactsComponent]
 })
 
 export class SectionsModule {

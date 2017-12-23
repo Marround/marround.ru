@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.scroll(0, 15);
     window.scroll(0, 0);
   }
   goToNext(nextElem) {

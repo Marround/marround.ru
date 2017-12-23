@@ -4,7 +4,7 @@ p {
 }
 
 a {
-  color: white;
+  color: #333;
   text-decoration: none;
 }
 
@@ -15,8 +15,8 @@ h3 {
 }
 
 .docs-footer {
-  background: #3097D1 !important;
-  color: hsla(0,0%,100%,.87);
+  background: linear-gradient(to top left, rgba(255, 191, 204, 1), rgba(176, 224, 230, 1));
+  color: #333333;
   font-size: 12px;
   padding: 25px 0;
 }

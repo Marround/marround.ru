@@ -1,19 +1,35 @@
-@import url(http://allfont.ru/allfont.css?fonts=capture-it);
-.label-container, .text-container {
+.revealator-fadein {
   font-family: 'Capture it', arial;
 }
 
-.revealator-fadein>h1 {
-  font-size: calc(1em + 5vw);
+@media (min-width: 400px) {
+  .revealator-fadein>h1 {
+    font-size: calc(1em + 5vw);
+  }
+  .revealator-fadein>h2 {
+    font-size: calc(1em + 3vw);
+  }
+  .revealator-fadein>h3 {
+    font-size: calc(1em + 2vw);
+  }
+  .revealator-fadein>h4 {
+    font-size: calc(1em + 1vw);
+  }
 }
-.revealator-fadein>h2 {
-  font-size: calc(1em + 3vw);
-}
-.revealator-fadein>h3 {
-  font-size: calc(1em + 2vw);
-}
-.revealator-fadein>h4 {
-  font-size: calc(1em + 1vw);
+
+@media (max-width: 399px) {
+  .revealator-fadein>h1 {
+    font-size: calc(0.7em + 5vw);
+  }
+  .revealator-fadein>h2 {
+    font-size: calc(0.7em + 3vw);
+  }
+  .revealator-fadein>h3 {
+    font-size: calc(0.7em + 2vw);
+  }
+  .revealator-fadein>h4 {
+    font-size: calc(0.7em + 1vw);
+  }
 }
 
 .landing-container {
@@ -33,7 +49,7 @@
   overflow: hidden;
 }
 video{
-  position: fixed;
+  position: absolute;
   z-index:-1;
   min-width:100%;
   min-height:100%;
@@ -65,18 +81,18 @@ video{
 }
 
 .beard {
-  height: 50%;
+  height: 50% !important;
   position: absolute;
-  left: 50%;
+  left: 45%;
   margin-left: -100px;
   top: 30% !important;
 }
 
 .scroll-next {
-  margin-left: 50%;
   margin-top: -50px;
   background-color: rgba(255, 191, 204, .7);
   position: absolute;
+  left: calc(50vw - 20px);
 }
 
 .card {
@@ -150,4 +166,8 @@ video{
 
 .fb-link {
   margin-left: 10px;
+}
+
+.fb-notice {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

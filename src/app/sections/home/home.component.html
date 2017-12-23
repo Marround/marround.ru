@@ -3,18 +3,20 @@
     <video autoplay loop>
       <source src="assets/video/bkg.mp4" type="video/mp4">
     </video>
-    <div class="label-container">
-      <div class="revealator-fadein">
-        <h2 class="revealator-slideleft revealator-delay2 revealator-duration5">Привет</h2>
-        <h3 class="revealator-slideleft revealator-delay5 revealator-duration5">Меня зовут Игорь a.k.a.</h3>
-        <h1 class="revealator-slideleft revealator-delay8 revealator-duration5">Marround</h1>
+    <div class="d-flex align-items-start flex-column w-100">
+      <div class="mb-auto p-2">
+        <div class="revealator-fadein pl-3">
+          <h2 class="revealator-slideleft revealator-delay2 revealator-duration5">Привет</h2>
+          <h3 class="revealator-slideleft revealator-delay5 revealator-duration5">Меня зовут Игорь a.k.a.</h3>
+          <h1 class="revealator-slideleft revealator-delay8 revealator-duration5">Marround</h1>
+        </div>
       </div>
-    </div>
-    <img src="/assets/img/beard.png" class="beard revealator-zoomin revealator-delay1 revealator-duration5">
-    <div class="text-container">
-      <div class="revealator-fadein">
-        <h4 class="revealator-slideright revealator-delay13 revealator-duration5 float-right">Я разработчик вэб сайтов</h4><br>
-        <h4 class="revealator-slideright revealator-delay16 revealator-duration5 float-right">И вот что Я могу Вам предложить</h4>
+      <img src="/assets/img/beard.png" class="beard">
+      <div class="w-100">
+        <div class="revealator-fadein float-right pr-3">
+          <h4 class="revealator-slideright revealator-delay13 revealator-duration5 float-right">Я разработчик вэб сайтов</h4><br>
+          <h4 class="revealator-slideright revealator-delay16 revealator-duration5 float-right">И вот что Я могу Вам предложить</h4>
+        </div>
       </div>
     </div>
   </div>
@@ -123,7 +125,7 @@
                   <mat-card class="card-texture mat-elevation-z12">
                     <mat-card-title>Single-page application</mat-card-title>
                     <mat-card-content>
-                      <strong>SPA (single-page application)</strong> - это не просто сайт, а полноценное приложение, работа которого полностью перенесена на сторону клиента, то есть в браузер. И в отличие от обычных сайтов предоставляет не просто контент, а полноценный сервис, общаясь с сервером только чистыми данными. Ярким представителем среди front-end фреймворков является Angular 2+ от Google.
+                      <strong>SPA (single-page application)</strong> - это не просто сайт, а полноценное приложение, работа которого полностью перенесена на сторону клиента, то есть в браузер. И в отличие от обычных сайтов предоставляет не просто контент, а полноценный сервис, общаясь с сервером только чистыми данными. Ярким представителем среди front-end фреймворков является Angular 5 от Google.
                     </mat-card-content>
                     <mat-card-footer>
                       <p class="text-center">От 7 000 ₽</p>
@@ -194,15 +196,25 @@
                       <img src="/assets/img/icons/skype.png" width="24">
                       <a href="skype:marround?call" class="fb-link">Skype:marround</a>
                     </mat-list-item>
+                    <mat-list-item role="listitem">
+                      <img src="/assets/img/icons/vk.png" width="24">
+                      <a href="https://vk.com/marround" class="fb-link" target="_blank">vk.com/marround</a>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <mat-icon>query_builder</mat-icon>
+                        <a class="fb-link">ПН-ПТ: 09:00 - 18:00</a>
+                    </mat-list-item>
                   </mat-list>
-
+                  <div class="fb-notice">
+                    <p><strong>У Вас возникли вопросы или Вы уже знаете что хотите - позвоните, напишите или заполните форму обратной связи! Я отвечу на все Ваши вопросы, консультация всегда будет бесплатной.</strong></p>
+                  </div>
                 </div>
                 <div class="w-100 m-2 d-xl-none d-lg-none"></div>
                 <div class="col border border-white fb-bkg">
                   <!--Form with header-->
                   <div class="card">
                     <div class="col-lg-12 mb-5">
-                      <h3 class="text-center">Оставьте заявку</h3>
+                      <h2 class="text-center">Оставьте заявку</h2>
                       <form>
                         <div class="feedback-form">
                           <mat-form-field>

@@ -1,11 +1,13 @@
-/*body {*/
-  /*min-width: 1000px;*/
-  /*min-height: 760px;*/
-/*}*/
+@import url(http://allfont.ru/allfont.css?fonts=capture-it);
 
 button:active, button:focus {
   outline: none !important;
 }
 button::-moz-focus-inner {
   border: 0 !important;
+}
+
+.mcmh {
+  min-height: calc(100vh - 154px);
+  padding-top: 52px;
 }
