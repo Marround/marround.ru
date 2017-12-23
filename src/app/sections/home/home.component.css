@@ -1,0 +1,129 @@
+@import url(http://allfont.ru/allfont.css?fonts=capture-it);
+.label-container, .text-container {
+  font-family: 'Capture it', arial;
+}
+
+.revealator-fadein>h1 {
+  font-size: calc(1em + 5vw);
+}
+.revealator-fadein>h2 {
+  font-size: calc(1em + 3vw);
+}
+.revealator-fadein>h3 {
+  font-size: calc(1em + 2vw);
+}
+.revealator-fadein>h4 {
+  font-size: calc(1em + 1vw);
+}
+
+.landing-container {
+  width: 100%;
+  position: relative;
+}
+
+.landing {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  position: relative;
+  overflow: hidden;
+}
+video{
+  position: fixed;
+  z-index:-1;
+  min-width:100%;
+  min-height:100%;
+  overflow:hidden;
+  margin: -52px 0 0 0;
+}
+.bkg-1 {
+  background: linear-gradient(to top left, rgba(255, 191, 204, .5), rgba(176, 224, 230, 0.5));
+}
+.bkg-2 {
+  background: linear-gradient(to top left, rgba(255, 191, 204, .5), rgba(176, 224, 230, 0.5)), url(/assets/img/2.jpg) no-repeat;
+}
+.bkg-3 {
+  background: linear-gradient(to top left, rgba(255, 191, 204, .5), rgba(176, 224, 230, 0.5)), url(/assets/img/5.jpg) no-repeat;
+}
+
+.label-container>div {
+  margin: 0 30px;
+}
+
+.text-container {
+  bottom: 0;
+  padding-bottom: 50px;
+  position: absolute;
+  right: 30px;
+}
+
+.beard {
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: 30% !important;
+}
+
+.scroll-next {
+  margin-left: 50%;
+  margin-top: -50px;
+  background-color: rgba(255, 191, 204, .7);
+  position: absolute;
+}
+
+.card {
+  font-family: "Open Sans";
+}
+
+/*.card-header-bkg {*/
+  /*background-position: 50% 50% !important;*/
+  /*background-size: cover !important;*/
+  /*background: linear-gradient(to top left, rgba(255, 191, 204, .5), rgba(176, 224, 230, 0.5)), url(/assets/img/texture/texture_2_s.png) no-repeat;*/
+/*}*/
+
+/*.card-header-text {*/
+  /*color: #333;*/
+  /*font-weight: 700;*/
+  /*font-size: calc(0.7em + 1vw);*/
+/*}*/
+
+.m-top {
+  margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  .m-xs-top {
+    margin-top: 20px;
+  }
+}
+
+.card-hover {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.card-hover:hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+
+.content-block {
+  font-family: 'Capture it', arial;
+  max-width: 1230px !important;
+  padding: 0 15px !important;
+  margin: 0 auto !important;
+}
+
+.content-block h2 {
+  font-size: calc(1em + 3vw);
+}
+
+.card-texture {
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  background: linear-gradient(to top left, rgba(255, 191, 204, .5), rgba(176, 224, 230, 0.5)), url(/assets/img/texture/texture_3.png) no-repeat;
+}

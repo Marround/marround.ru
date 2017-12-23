@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/*body {*/
+  /*min-width: 1000px;*/
+  /*min-height: 760px;*/
+/*}*/
+
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
