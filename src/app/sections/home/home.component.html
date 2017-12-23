@@ -30,7 +30,7 @@
             <div class="card revealator-slideleft revealator-delay2 revealator-duration5 mat-elevation-z12 card-hover">
               <!--<div class="card-header card-header-bkg text-center card-header-text"></div>-->
               <div class="card-body">
-                <h4 class="card-title card-header-text text-center">Актуально</h4>
+                <h4 class="card-title card-header-text text-center">Актуальность</h4>
                 <p class="card-text">
                   Разработка исключительно на основе современных тенденций, инновационных технологий в сайтостроении, проектировании и дизайне.
                 </p>
@@ -49,7 +49,7 @@
             <div class="card revealator-slideleft revealator-delay4 revealator-duration5 mat-elevation-z12 card-hover">
               <!--<div class="card-header card-header-bkg text-center card-header-text"></div>-->
               <div class="card-body">
-                <h4 class="card-title card-header-text text-center">Персонально</h4>
+                <h4 class="card-title card-header-text text-center">Персональность</h4>
                 <p class="card-text">
                   Учет персональных пожеланий, конструктивной критики и рекомендаций ведущих веб-специалистов на каждом этапе работы над проектом.
                 </p>
@@ -64,7 +64,7 @@
             <div class="card revealator-slideleft revealator-delay6 revealator-duration5 mat-elevation-z12 card-hover">
               <!--<div class="card-header card-header-bkg text-center card-header-text">Качество</div>-->
               <div class="card-body">
-                <h4 class="card-title card-header-text text-center">Качественно</h4>
+                <h4 class="card-title card-header-text text-center">Качество</h4>
                 <p class="card-text">
                   Многократное тестирование ресурса, идеальное выверение код и адаптация сайта под все виды устройств – от настольного ПК до мобильного гаджета.
                 </p>
@@ -79,7 +79,7 @@
             <div class="card revealator-slideleft revealator-delay8 revealator-duration5 mat-elevation-z12 card-hover">
               <!--<div class="card-header card-header-bkg text-center card-header-text">Лучшая цена</div>-->
               <div class="card-body">
-                <h4 class="card-title card-header-text text-center">Выгодно</h4>
+                <h4 class="card-title card-header-text text-center">Выгоду</h4>
                 <p class="card-text">
                   Предоставление честной цены за профессиональную работу опытного специалиста – без переплат и проблем.
                 </p>
@@ -103,7 +103,7 @@
         <div class="row justify-content-center align-self-center">
           <div class="row">
             <div class="col-12">
-              <h2 class="text-center">Создание сайтов</h2>
+              <h1 class="text-center">Создание сайтов</h1>
             </div>
             <div class="col-12">
               <div class="row">
@@ -155,6 +155,86 @@
                       <p class="text-center">От 20 000 ₽</p>
                     </mat-card-footer>
                   </mat-card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button mat-mini-fab class="scroll-next" (click)="goToNext('fourth-lang')"><mat-icon>keyboard_arrow_down</mat-icon></button>
+
+  <div class="landing bkg-4" id="fourth-lang">
+    <div class="content-block">
+      <div class="container-fluid d-flex h-100">
+        <div class="row justify-content-center align-self-center">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-center">Мои контакты</h2>
+            </div>
+            <div class="col-12">
+              <div class="row">
+                <div class="col border border-white mr-xl-2 mr-lg-2 mr-md-2 fb-bkg">
+                  <mat-list role="list">
+                    <mat-list-item role="listitem">
+                      <mat-icon>smartphone</mat-icon>
+                      <a href="tel:89202055125" target="_blank" class="fb-link">8 (920) 205-51-25</a>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                      <img src="/assets/img/icons/telegram.png" width="24">
+                      <a href="https://t.me/marround" target="_blank" class="fb-link">Telegram: @marround</a>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                      <mat-icon>mail_outline</mat-icon>
+                      <a href="mailto:marround@yandex.ru" target="_blank" class="fb-link">marround@yandex.ru</a>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                      <img src="/assets/img/icons/skype.png" width="24">
+                      <a href="skype:marround?call" class="fb-link">Skype:marround</a>
+                    </mat-list-item>
+                  </mat-list>
+
+                </div>
+                <div class="w-100 m-2 d-xl-none d-lg-none"></div>
+                <div class="col border border-white fb-bkg">
+                  <!--Form with header-->
+                  <div class="card">
+                    <div class="col-lg-12 mb-5">
+                      <h3 class="text-center">Оставьте заявку</h3>
+                      <form>
+                        <div class="feedback-form">
+                          <mat-form-field>
+                            <span matPrefix><mat-icon class="sky-blue">account_circle</mat-icon>&nbsp;&nbsp;</span>
+                            <input matInput #uname placeholder="Ваше имя" maxlength="70" name="uName" [(ngModel)]="uName" required>
+                            <mat-hint align="end">{{uname.value.length}} / 70</mat-hint>
+                          </mat-form-field>
+
+                          <mat-form-field>
+                            <span matPrefix><mat-icon class="sky-blue">mail_outline</mat-icon>&nbsp;&nbsp;</span>
+                            <input matInput #mailfield placeholder="Email" maxlength="50" name="email" [(ngModel)]="email" required>
+                            <mat-hint align="end">{{mailfield.value.length}} / 50</mat-hint>
+                          </mat-form-field>
+
+                          <mat-form-field class="example-full-width">
+                            <span matPrefix>+7 &nbsp;</span>
+                            <input type="tel" matInput #phonenumber placeholder="Телефон" maxlength="10" name="phone" [(ngModel)]="phone" required>
+                            <mat-hint align="end">{{phonenumber.value.length}} / 10</mat-hint>
+                          </mat-form-field>
+
+                          <mat-form-field>
+                            <textarea matInput #message placeholder="Текст сообщения" maxlength="256" rows="7" name="textMessage" [(ngModel)]="textMessage" required></textarea>
+                            <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                          </mat-form-field>
+
+                        </div>
+                        <br>
+                        <button mat-fab color="primary" class="float-right align-bottom" (click)="sendMessage(uName, email, phone, textMessage)"><mat-icon>send</mat-icon></button>
+                      </form>
+                    </div>
+                  </div>
+                  <!--Form with header-->
                 </div>
               </div>
             </div>

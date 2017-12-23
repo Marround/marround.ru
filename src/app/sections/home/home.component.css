@@ -49,6 +49,9 @@ video{
 .bkg-3 {
   background: linear-gradient(to top left, rgba(255, 191, 204, .5), rgba(176, 224, 230, 0.5)), url(/assets/img/5.jpg) no-repeat;
 }
+.bkg-4 {
+  background: linear-gradient(to top left, rgba(255, 191, 204, .5), rgba(176, 224, 230, 0.5)), url(/assets/img/6.jpg) no-repeat;
+}
 
 .label-container>div {
   margin: 0 30px;
@@ -118,6 +121,9 @@ video{
   margin: 0 auto !important;
 }
 
+.content-block h1 {
+  font-size: calc(1em + 3vw);
+}
 .content-block h2 {
   font-size: calc(1em + 3vw);
 }
@@ -126,4 +132,22 @@ video{
   background-position: 50% 50% !important;
   background-size: cover !important;
   background: linear-gradient(to top left, rgba(255, 191, 204, .5), rgba(176, 224, 230, 0.5)), url(/assets/img/texture/texture_3.png) no-repeat;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fb-bkg {
+  background-color: rgba(255,255,255, 0.6);
+}
+
+.card {
+  background: none;
+  border: none;
+}
+
+.fb-link {
+  margin-left: 10px;
 }

@@ -1,5 +1,11 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 declare let $: any;
+export class Message {
+  constructor(public neme: string,
+              public email: string,
+              public phone: string,
+              public text: string) { }
+}
 @Component({
   moduleId: module.id,
   selector: 'app-home',
@@ -7,6 +13,8 @@ declare let $: any;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  message: Message;
 
   constructor() { }
 
@@ -18,5 +26,9 @@ export class HomeComponent implements OnInit {
     $('body,html').animate({
       scrollTop: nextElementY
     }, 500);
+  }
+  sendMessage(uName, email, phone, textMessage) {
+    this.message = new Message(uName, email, phone, textMessage);
+    console.log(this.message);
   }
 }
