@@ -15,7 +15,7 @@ export const staticPagesRouts = [
   {path: 'spa', component: SpaComponent},
   {path: 'sitecutaway', component: SitecutawayComponent},
   {path: 'sitecatalog', component: SitecatalogComponent},
-  {path: 'standart', component: StandartComponent},
+  {path: 'standard', component: StandartComponent},
   {path: 'allinclusive', component: AllinclusiveComponent},
   {path: 'hosting', component: HostingComponent},
   {path: 'domain', component: DomainnameComponent}
