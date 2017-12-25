@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -13,5 +13,4 @@ export class ServicesComponent implements OnInit {
   ngOnInit() {
     window.scroll(0, 0);
   }
-
 }

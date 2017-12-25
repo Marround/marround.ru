@@ -3,31 +3,31 @@
 }
 
 @media (min-width: 400px) {
-  .revealator-fadein>h1 {
+  h1 {
     font-size: calc(1em + 5vw);
   }
-  .revealator-fadein>h2 {
+  h2 {
     font-size: calc(1em + 3vw);
   }
-  .revealator-fadein>h3 {
+  h3 {
     font-size: calc(1em + 2vw);
   }
-  .revealator-fadein>h4 {
+  h4 {
     font-size: calc(1em + 1vw);
   }
 }
 
 @media (max-width: 399px) {
-  .revealator-fadein>h1 {
+  h1 {
     font-size: calc(0.7em + 5vw);
   }
-  .revealator-fadein>h2 {
+  h2 {
     font-size: calc(0.7em + 3vw);
   }
-  .revealator-fadein>h3 {
+  h3 {
     font-size: calc(0.7em + 2vw);
   }
-  .revealator-fadein>h4 {
+  h4 {
     font-size: calc(0.7em + 1vw);
   }
 }
@@ -141,7 +141,7 @@ video{
   font-size: calc(1em + 3vw);
 }
 .content-block h2 {
-  font-size: calc(1em + 3vw);
+  font-size: calc(1em + 2vw);
 }
 
 .card-texture {

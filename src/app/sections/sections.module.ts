@@ -10,11 +10,15 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {RouterModule} from '@angular/router';
+import {staticPagesRouts, StaticPagesModule} from './services/staticpages/index';
 
 
 
 @NgModule({
   imports: [
+    RouterModule.forChild(staticPagesRouts),
     CommonModule,
     BrowserAnimationsModule,
     MatCardModule,
@@ -25,7 +29,9 @@ import { ContactsComponent } from './contacts/contacts.component';
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    MatSidenavModule,
+    StaticPagesModule
   ],
   declarations: [HomeComponent, ServicesComponent, ContactsComponent],
   exports: [HomeComponent, ServicesComponent, ContactsComponent]

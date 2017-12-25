@@ -1,0 +1,13 @@
+h1 {
+  font-family: 'Capture it', arial;
+}
+@media (min-width: 400px) {
+  h1 {
+    font-size: calc(1em + 4vw);
+  }
+}
+@media (max-width: 399px) {
+  h1 {
+    font-size: calc(0.7em + 4vw);
+  }
+}

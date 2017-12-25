@@ -7,7 +7,8 @@ import {FooterComponent} from './globcomp/footer/footer.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpModule} from '@angular/http';
 import {RouterModule} from '@angular/router';
-import {MatButtonModule, MatIconModule} from "@angular/material";
+import {MatButtonModule, MatIconModule} from '@angular/material';
+import {LoadJsonService} from './srvice/loadjson.service';
 
 
 @NgModule({
@@ -23,9 +24,10 @@ import {MatButtonModule, MatIconModule} from "@angular/material";
     HttpModule,
     SectionsModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [LoadJsonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

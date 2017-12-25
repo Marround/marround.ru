@@ -34,7 +34,8 @@ a {
 }
 
 .bkg-1 {
-  background: linear-gradient(to top left, rgba(255, 191, 204, .7), rgba(176, 224, 230, 0.7));
+  background: linear-gradient(to top left, rgba(255, 191, 204, .7), rgba(176, 224, 230, 0.7)), url(/assets/img/7.jpg) center no-repeat;
+  background-size: cover;
 }
 .content-block {
   font-family: 'Capture it', arial;

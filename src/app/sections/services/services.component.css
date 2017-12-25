@@ -1,0 +1,45 @@
+@media (min-width: 400px) {
+  .menu-button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 399px) {
+  .menu-button {
+    margin-top: 0;
+  }
+}
+a:hover {
+  text-underline: none;
+  text-decoration: none;
+}
+.sn-container {
+  width: 100%;
+  min-height: calc(100vh - 154px);
+  padding-top: 52px;
+  background: linear-gradient(to top left, rgba(255, 191, 204, 1), rgba(176, 224, 230, 1));
+  background-size: auto;
+}
+
+.sidenav {
+  padding: 52px 0 0 0;
+  background: #eee;
+  background-size: cover;
+}
+
+.sidenav-content {
+  height: 100%;
+}
+
+.menu-button {
+  position: fixed;
+  min-width: 10px !important;
+  padding: 0 15px;
+  z-index: 9999;
+}
+
+.active {
+  z-index: 2;
+  color: #333;
+  background: linear-gradient(to top left, rgba(255, 191, 204, 1), rgba(176, 224, 230, 1));
+  border-color: #eee;
+}
