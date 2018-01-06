@@ -16,6 +16,11 @@ export class HomeComponent implements OnInit {
 
   message: Message;
 
+  uName: string;
+  email: string;
+  phone: string;
+  textMessage: string;
+
   constructor() { }
 
   ngOnInit() {
