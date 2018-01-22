@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Meta, Title} from '@angular/platform-browser';
 export class Message {
   constructor(public neme: string,
               public email: string,
@@ -17,7 +18,11 @@ export class ContactsComponent implements OnInit {
   phone: string;
   textMessage: string;
 
-  constructor() { }
+  constructor(private title: Title, private meta: Meta) {
+    this.title.setTitle('Контакты - Marround - частный вэб мастер - Белгород');
+    this.meta.updateTag({name: 'keywords', content: 'Контакты, телефон, Email, skype, telegram, Marround, частный вэб мастер, Белгород'});
+    this.meta.updateTag({name: 'description', content: 'Страница контактов частного вэб мастера Marround Белгород'});
+  }
 
   ngOnInit() {
   }

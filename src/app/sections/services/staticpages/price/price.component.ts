@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {IPricelist} from '../../../../srvice/pricelist';
 import {LoadJsonService} from '../../../../srvice/loadjson.service';
+import {Meta, Title} from "@angular/platform-browser";
 
 @Component({
   moduleId: module.id,
@@ -16,7 +17,11 @@ export class PriceComponent implements OnInit {
 
   errorMessage: string;
 
-  constructor(private jsonService: LoadJsonService) { }
+  constructor(private jsonService: LoadJsonService, private title: Title, private meta: Meta) {
+    this.title.setTitle('Прайслист - Услуги - Marround - частный вэб мастер - Белгород');
+    this.meta.updateTag({name: 'keywords', content: 'Прайслист, цены, тарифы, разработка сайтов, создание сайта, сопровождение сайта, публикация сайта, Marround, частный вэб мастер, Белгород'});
+    this.meta.updateTag({name: 'description', content: 'Прайслист, полный перечень оказываемых услуг'});
+  }
 
   ngOnInit() {
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-domainname',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DomainnameComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title: Title, private meta: Meta) {
+    this.title.setTitle('Домен - услуги - Marround - частный вэб мастер - Белгород');
+    this.meta.updateTag({name: 'keywords', content: 'Marround, частный вэб мастер, Белгород'});
+    this.meta.updateTag({name: 'description', content: ''});
+  }
 
   ngOnInit() {
   }

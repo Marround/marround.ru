@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, BrowserTransferStateModule} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {SectionsModule, routs} from './sections/index';
 import { AppComponent } from './app.component';
@@ -9,6 +9,7 @@ import {HttpModule} from '@angular/http';
 import {RouterModule} from '@angular/router';
 import {MatButtonModule, MatIconModule} from '@angular/material';
 import {LoadJsonService} from './srvice/loadjson.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,13 +20,14 @@ import {LoadJsonService} from './srvice/loadjson.service';
   ],
   imports: [
     RouterModule.forRoot(routs),
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'marround'}),
     BrowserAnimationsModule,
     HttpModule,
     SectionsModule,
     MatIconModule,
     MatButtonModule,
-    HttpModule
+    HttpClientModule,
+    BrowserTransferStateModule
   ],
   providers: [LoadJsonService],
   bootstrap: [AppComponent]

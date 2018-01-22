@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-standart',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StandartComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title: Title, private meta: Meta) {
+    this.title.setTitle('Сопровождение "Standard" - Услуги - Marround - частный вэб мастер - Белгород');
+    this.meta.updateTag({name: 'keywords', content: 'All inclusive, Сопровождение сайтов, техническое обслуживание сайтов, наполнение сайтов, Marround, частный вэб мастер, Белгород'});
+    this.meta.updateTag({name: 'description', content: 'Тариф на обслуживание сата "Standard", информация о тарифе, список видов работ'});
+  }
 
   ngOnInit() {
   }
