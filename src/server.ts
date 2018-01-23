@@ -8,7 +8,7 @@ import { readFileSync } from 'fs';
 
 enableProdMode();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 4200;
 const DIST_FOLDER = join(process.cwd(), 'dist');
 
 const app = express();
@@ -32,6 +32,6 @@ app.get('*', (req, res) => {
   res.render('index', { req });
 });
 
-app.listen(PORT, () => {
+app.listen(80, () => {
   console.log(`listening on http://localhost:${PORT}!`);
 });
