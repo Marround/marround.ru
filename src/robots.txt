@@ -1,0 +1,6 @@
+Host: http://marround.ru/
+
+User-agent: *
+Disallow: /services
+Allow: /services/*
+Sitemap: http://marround.ru/assets/sitemap/index.xml

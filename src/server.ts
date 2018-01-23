@@ -1,14 +1,14 @@
 import 'reflect-metadata';
 import 'zone.js/dist/zone-node';
-import { renderModuleFactory } from '@angular/platform-server'
-import { enableProdMode } from '@angular/core'
+import { renderModuleFactory } from '@angular/platform-server';
+import { enableProdMode } from '@angular/core';
 import * as express from 'express';
 import { join } from 'path';
 import { readFileSync } from 'fs';
 
 enableProdMode();
 
-const PORT = process.env.PORT || 4200;
+const PORT = process.env.PORT || 8080;
 const DIST_FOLDER = join(process.cwd(), 'dist');
 
 const app = express();
@@ -24,7 +24,7 @@ app.engine('html', (_, options, callback) => {
 });
 
 app.set('view engine', 'html');
-app.set('views', 'src')
+app.set('views', 'src');
 
 app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
 
