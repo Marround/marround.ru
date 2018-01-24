@@ -3,6 +3,8 @@ Allow: /
 Allow: /services/*
 Disallow: /services&
 Disallow: /assets/
+Allow: /assets/sitemap/index.xml
+
 Sitemap: http://marround.ru/assets/sitemap/index.xml
 
 Host: marround.ru
