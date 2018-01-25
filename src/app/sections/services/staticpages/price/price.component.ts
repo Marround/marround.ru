@@ -3,6 +3,7 @@ import {IPricelist} from '../../../../srvice/pricelist';
 import {LoadJsonService} from '../../../../srvice/loadjson.service';
 import {makeStateKey, Meta, Title, TransferState} from '@angular/platform-browser';
 import {HttpClient} from '@angular/common/http';
+import {Response} from '@angular/http';
 
 const PRICE_KEY = makeStateKey('price');
 
