@@ -32,7 +32,7 @@ export class PriceComponent implements OnInit {
   ngOnInit() {
     this.pricelist = this.state.get(PRICE_KEY, null as any);
 
-    this.priceUrl = 'http://' + location.hostname + '/assets/json/price.json';
+    this.priceUrl = 'http://marround.ru/assets/json/price.json';
     this.jsonService.getJSON(this.priceUrl).subscribe(data => {
       this.pricelist = data.pricelist;
       this.state.set(PRICE_KEY, data.pricelist as any);
