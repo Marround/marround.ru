@@ -29,9 +29,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    window.scroll(0, 15);
-    window.scroll(0, 0);
   }
+
   goToNext(nextElem) {
     const nextElementY = document.getElementById(nextElem).offsetTop;
     $('body,html').animate({
