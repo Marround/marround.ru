@@ -31,24 +31,13 @@ export class PriceComponent implements OnInit {
 
   ngOnInit() {
     this.pricelist = this.state.get(PRICE_KEY, null as any);
-
-    this.priceUrl = 'http://marround.ru/assets/json/price.json';
-    this.jsonService.getJSON(this.priceUrl).subscribe(data => {
-      this.pricelist = data.pricelist;
-      this.state.set(PRICE_KEY, data.pricelist as any);
-    }, error => this.errorMessage = < any > error);
-
-  // if (!this.pricelist) {
-  //   this.http
-  //     .get('http://marround.ru/assets/json/price.json')
-  //     .map((response: Response) => response.json())
-  //     .subscribe(data => {
-  //       data.then(value => {
-  //         this.pricelist = value.pricelist;
-  //         this.state.set(PRICE_KEY, value.pricelist as any);
-  //       });
-  //     });
-  // }
+    if (!this.pricelist) {
+      this.priceUrl = 'http://marround.ru/assets/json/price.json';
+      this.jsonService.getJSON(this.priceUrl).subscribe(data => {
+        this.pricelist = data.pricelist;
+        this.state.set(PRICE_KEY, data.pricelist as any);
+      }, error => this.errorMessage = < any > error);
+    }
   }
 
 }
