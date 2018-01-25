@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {IPricelist} from '../../../../srvice/pricelist';
 import {LoadJsonService} from '../../../../srvice/loadjson.service';
-import {makeStateKey, Meta, Title, TransferState} from '@angular/platform-browser';
-import {HttpClient} from '@angular/common/http';
+import {Meta, Title} from '@angular/platform-browser';
 
-const PRICE_KEY = makeStateKey('price');
 
 @Component({
   moduleId: module.id,
@@ -21,8 +19,6 @@ export class PriceComponent implements OnInit {
     private jsonService: LoadJsonService,
     private title: Title,
     private meta: Meta,
-    private http: HttpClient,
-    private state: TransferState
   ) {
     this.title.setTitle('Прайслист - Услуги - Marround - частный вэб мастер - Белгород');
     this.meta.updateTag({name: 'keywords', content: 'Прайслист, цены, тарифы, разработка сайтов, создание сайта, сопровождение сайта, публикация сайта, Marround, частный вэб мастер, Белгород'});
@@ -30,14 +26,8 @@ export class PriceComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.pricelist = this.state.get(PRICE_KEY, null as any);
-    if (!this.pricelist) {
-      this.priceUrl = 'http://marround.ru/assets/json/price.json';
-      this.jsonService.getJSON(this.priceUrl).subscribe(data => {
-        this.pricelist = data.pricelist;
-        this.state.set(PRICE_KEY, data.pricelist as any);
-      }, error => this.errorMessage = < any > error);
-    }
+    this.priceUrl = 'http://marround.ru/assets/json/price.json';
+    this.jsonService.getJSON(this.priceUrl).subscribe(data => this.pricelist = data.pricelist, error => this.errorMessage = < any > error);
   }
 
 }
