@@ -14,7 +14,7 @@ export class PriceComponent implements OnInit {
 
   pricelist: IPricelist;
 
-  priceUrl: 'http://marround.ru/assets/json/price.json';;
+  priceUrl: 'http://marround.ru/assets/json/price.json';
 
   errorMessage: string;
 
