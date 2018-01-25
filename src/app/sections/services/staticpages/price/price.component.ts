@@ -14,13 +14,11 @@ export class PriceComponent implements OnInit {
 
   pricelist: IPricelist;
 
-  priceUrl: string;
+  priceUrl: 'http://marround.ru/assets/json/price.json';;
 
   errorMessage: string;
 
   constructor(private jsonService: LoadJsonService, private title: Title, private meta: Meta, private router: Router) {
-    this.priceUrl = 'http://' + location.hostname + '/assets/json/price.json';
-    console.log(this.priceUrl);
     this.title.setTitle('Прайслист - Услуги - Marround - частный вэб мастер - Белгород');
     this.meta.updateTag({name: 'keywords', content: 'Прайслист, цены, тарифы, разработка сайтов, создание сайта, сопровождение сайта, публикация сайта, Marround, частный вэб мастер, Белгород'});
     this.meta.updateTag({name: 'description', content: 'Прайслист, полный перечень оказываемых услуг'});
