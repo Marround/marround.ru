@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Meta, Title} from '@angular/platform-browser';
 
+declare let $: any;
+
 @Component({
   selector: 'app-sitecatalog',
   templateUrl: './sitecatalog.component.html',
@@ -15,6 +17,9 @@ export class SitecatalogComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 200);
   }
 
 }

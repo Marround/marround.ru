@@ -1,0 +1,38 @@
+h1 {
+  font-family: 'Capture it', arial;
+}
+
+@media (min-width: 400px) {
+  h1 {
+    font-size: calc(1em + 5vw);
+  }
+  h2 {
+    font-size: calc(1em + 3vw);
+  }
+}
+
+@media (max-width: 399px) {
+  h1 {
+    font-size: calc(0.7em + 5vw);
+  }
+  h2 {
+    font-size: calc(0.7em + 3vw);
+  }
+}
+.card-link {
+  text-decoration: none;
+}
+.container {
+  padding-top: 52px;
+  min-height: calc(100vh - 154px);
+}
+.card-texture {
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  background: linear-gradient(to top left, rgba(255, 191, 204, .5), rgba(176, 224, 230, 0.5)), url(/assets/img/texture/texture_3.png) no-repeat;
+}
+
+.bkg-1 {
+  background: linear-gradient(to top left, rgba(255, 191, 204, .3), rgba(176, 224, 230, 0.3)), url(/assets/img/9.png) center no-repeat;
+  background-size: cover;
+}

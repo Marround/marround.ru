@@ -13,6 +13,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {RouterModule} from '@angular/router';
 import {staticPagesRouts, StaticPagesModule} from './services/staticpages/index';
+import {MainComponent} from './services/main/main.component';
 
 
 
@@ -33,8 +34,8 @@ import {staticPagesRouts, StaticPagesModule} from './services/staticpages/index'
     MatSidenavModule,
     StaticPagesModule
   ],
-  declarations: [HomeComponent, ServicesComponent, ContactsComponent],
-  exports: [HomeComponent, ServicesComponent, ContactsComponent]
+  declarations: [HomeComponent, ServicesComponent, ContactsComponent, MainComponent],
+  exports: [HomeComponent, ServicesComponent, ContactsComponent, MainComponent]
 })
 
 export class SectionsModule {

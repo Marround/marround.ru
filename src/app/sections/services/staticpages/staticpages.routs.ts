@@ -7,6 +7,7 @@ import {StandartComponent} from './standart/standart.component';
 import {AllinclusiveComponent} from './allinclusive/allinclusive.component';
 import {HostingComponent} from './hosting/hosting.component';
 import {DomainnameComponent} from './domainname/domainname.component';
+import {SeoComponent} from './seo/seo.component';
 
 
 export const staticPagesRouts = [
@@ -17,6 +18,7 @@ export const staticPagesRouts = [
   {path: 'sitecatalog', component: SitecatalogComponent},
   {path: 'standard', component: StandartComponent},
   {path: 'allinclusive', component: AllinclusiveComponent},
+  {path: 'seo', component: SeoComponent},
   {path: 'hosting', component: HostingComponent},
   {path: 'domain', component: DomainnameComponent}
 ]

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Meta, Title} from '@angular/platform-browser';
 
+declare let $: any;
+
 @Component({
   selector: 'app-sitecutaway',
   templateUrl: './sitecutaway.component.html',
@@ -15,6 +17,9 @@ export class SitecutawayComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 200);
   }
 
 }

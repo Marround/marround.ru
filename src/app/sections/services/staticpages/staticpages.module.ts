@@ -15,6 +15,8 @@ import { StandartComponent } from './standart/standart.component';
 import { AllinclusiveComponent } from './allinclusive/allinclusive.component';
 import { HostingComponent } from './hosting/hosting.component';
 import { DomainnameComponent } from './domainname/domainname.component';
+import { MainComponent } from '../main/main.component';
+import { SeoComponent } from './seo/seo.component';
 
 
 @NgModule({
@@ -31,8 +33,19 @@ import { DomainnameComponent } from './domainname/domainname.component';
     MatSelectModule,
     FormsModule
   ],
-  declarations: [LandingpageComponent, PriceComponent, SpaComponent, SitecutawayComponent, SitecatalogComponent, StandartComponent, AllinclusiveComponent, HostingComponent, DomainnameComponent],
-  exports: [LandingpageComponent, PriceComponent, SpaComponent, SitecutawayComponent, SitecatalogComponent, StandartComponent, AllinclusiveComponent, HostingComponent, DomainnameComponent]
+  declarations: [
+    LandingpageComponent,
+    PriceComponent,
+    SpaComponent,
+    SitecutawayComponent,
+    SitecatalogComponent,
+    StandartComponent,
+    AllinclusiveComponent,
+    HostingComponent,
+    DomainnameComponent,
+    SeoComponent
+  ],
+  exports: []
 })
 
 export class StaticPagesModule {

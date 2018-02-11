@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Meta, Title} from '@angular/platform-browser';
 
+
+declare let $: any;
+
 @Component({
   selector: 'app-allinclusive',
   templateUrl: './allinclusive.component.html',
@@ -15,6 +18,9 @@ export class AllinclusiveComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 200);
   }
 
 }

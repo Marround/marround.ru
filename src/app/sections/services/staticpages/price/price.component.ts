@@ -4,6 +4,8 @@ import {LoadJsonService} from '../../../../srvice/loadjson.service';
 import {makeStateKey, Meta, Title, TransferState} from '@angular/platform-browser';
 import {HttpClient} from '@angular/common/http';
 
+declare let $: any;
+
 const PRICE_KEY = makeStateKey('price');
 
 @Component({
@@ -24,12 +26,16 @@ export class PriceComponent implements OnInit {
     private http: HttpClient,
     private state: TransferState
   ) {
-    this.title.setTitle('Прайслист - Услуги - Marround - частный вэб мастер - Белгород');
-    this.meta.updateTag({name: 'keywords', content: 'Прайслист, цены, тарифы, разработка сайтов, создание сайта, сопровождение сайта, публикация сайта, Marround, частный вэб мастер, Белгород'});
-    this.meta.updateTag({name: 'description', content: 'Прайслист, полный перечень оказываемых услуг'});
+    this.title.setTitle('Прайс - Услуги - Marround');
+    this.meta.updateTag({name: 'keywords', content: 'Прайслист, прайс, цены, тарифы, разработка сайтов, создание сайта, сопровождение сайта, Marround'});
+    this.meta.updateTag({name: 'description', content: 'Прайслист, полный перечень оказываемых услуг. Создание разработка сайтов, сопровождение сайтов, SEO продвижение, контекстная реклама.'});
   }
 
   ngOnInit() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 200);
+
     this.pricelist = this.state.get(PRICE_KEY, null as any);
     if (!this.pricelist) {
       this.priceUrl = 'http://marround.ru/assets/json/price.json';

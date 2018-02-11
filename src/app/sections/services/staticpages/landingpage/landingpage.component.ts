@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Meta, Title} from '@angular/platform-browser';
 
+declare let $: any;
+
 @Component({
   moduleId: module.id,
   selector: 'app-landingpage',
@@ -16,6 +18,9 @@ export class LandingpageComponent implements OnInit {
   }
 
   ngOnInit() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 200);
   }
 
 }

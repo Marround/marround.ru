@@ -23,12 +23,22 @@ export class HomeComponent implements OnInit {
   textMessage: string;
 
   constructor(private title: Title, private meta: Meta) {
-    this.title.setTitle('Разработка | создание сайтов - частный вэб мастер - Белгород');
-    this.meta.updateTag({name: 'keywords', content: 'Создание сайтов, разработка сатйов, частный вэб мастер, частный web мастер'});
-    this.meta.updateTag({name: 'description', content: 'Основная страница частного вэб мастера Marround'});
+    this.title.setTitle('Разработка создание сайтов - Marround');
+    this.meta.updateTag({
+      name: 'keywords',
+      content: 'создать сайт, разработка сайтов, разработка мобильныйх сайтов, разработка сайтов под ключ, ' +
+      'разработка официалоьношго сайта, СЕО оптимизация, продвижение сайтов, поддержка сайтов, низкая цена'
+    });
+    this.meta.updateTag({
+      name: 'description',
+      content: 'Разработка создание сайтов, лэндинг, одностраничкик, сайт визитка, корпоративный сайт, сайт каталог. ' +
+      'Низкая цена: от 3000 р. Индивидуальный подход к каждому клиету. Сопровождение сайта.'});
   }
 
   ngOnInit() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 0);
   }
 
   goToNext(nextElem) {

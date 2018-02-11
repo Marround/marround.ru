@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare let $: any;
+
 @Component({
   moduleId: module.id,
   selector: 'app-services',
@@ -11,5 +13,8 @@ export class ServicesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 200);
   }
 }
