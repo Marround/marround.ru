@@ -36,9 +36,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 0);
+    this.toTop();
   }
 
   goToNext(nextElem) {
@@ -46,6 +44,12 @@ export class HomeComponent implements OnInit {
     $('body,html').animate({
       scrollTop: nextElementY
     }, 500);
+  }
+
+  toTop() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 0);
   }
   sendMessage(uName, email, phone, textMessage) {
     this.message = new Message(uName, email, phone, textMessage);

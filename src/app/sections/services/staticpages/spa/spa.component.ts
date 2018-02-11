@@ -17,9 +17,11 @@ export class SpaComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.toTop();
+  }
+  toTop() {
     $('body,html').animate({
       scrollTop: 0
-    }, 200);
+    }, 0);
   }
-
 }

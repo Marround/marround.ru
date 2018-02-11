@@ -32,9 +32,7 @@ export class PriceComponent implements OnInit {
   }
 
   ngOnInit() {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 200);
+    this.toTop();
 
     this.pricelist = this.state.get(PRICE_KEY, null as any);
     if (!this.pricelist) {
@@ -45,5 +43,9 @@ export class PriceComponent implements OnInit {
       }, error => this.errorMessage = < any > error);
     }
   }
-
+  toTop() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 0);
+  }
 }
