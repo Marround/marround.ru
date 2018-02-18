@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Meta, Title} from '@angular/platform-browser';
 
-declare let $: any;
-
 @Component({
   selector: 'app-domainname',
   templateUrl: './domainname.component.html',
@@ -16,11 +14,5 @@ export class DomainnameComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.toTop();
-  }
-  toTop() {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 0);
   }
 }

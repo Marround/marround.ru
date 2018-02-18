@@ -1,8 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Meta, Title} from '@angular/platform-browser';
 
-declare let $: any;
-
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -42,7 +40,6 @@ export class MainComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.toTop();
   }
   ngOnDestroy() {
     this.meta.removeTag('property="og:locale"');
@@ -61,10 +58,5 @@ export class MainComponent implements OnInit, OnDestroy {
     this.meta.removeTag('name="msapplication-navbutton-colo"');
     this.meta.removeTag('name="apple-mobile-web-app-status-bar-style"');
     this.meta.removeTag('name="msapplication-starturl"');
-  }
-  toTop() {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 0);
   }
 }

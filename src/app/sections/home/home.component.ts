@@ -52,9 +52,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.toTop(0);
-    this.toTop(20);
-    this.toTop(0);
   }
   ngOnDestroy() {
     this.meta.removeTag('property="og:locale"');
@@ -79,12 +76,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     $('body,html').animate({
       scrollTop: nextElementY
     }, 500);
-  }
-
-  toTop(y) {
-    $('body,html').animate({
-      scrollTop: y
-    }, 0);
   }
   sendMessage(uName, email, phone, textMessage) {
     this.message = new Message(uName, email, phone, textMessage);

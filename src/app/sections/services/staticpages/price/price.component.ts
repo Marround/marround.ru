@@ -4,8 +4,6 @@ import {LoadJsonService} from '../../../../srvice/loadjson.service';
 import {makeStateKey, Meta, Title, TransferState} from '@angular/platform-browser';
 import {HttpClient} from '@angular/common/http';
 
-declare let $: any;
-
 const PRICE_KEY = makeStateKey('price');
 
 @Component({
@@ -48,8 +46,6 @@ export class PriceComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.toTop();
-
     this.pricelist = this.state.get(PRICE_KEY, null as any);
     if (!this.pricelist) {
       this.priceUrl = 'http://marround.ru/assets/json/price.json';
@@ -77,11 +73,5 @@ export class PriceComponent implements OnInit, OnDestroy {
     this.meta.removeTag('name="msapplication-navbutton-colo"');
     this.meta.removeTag('name="apple-mobile-web-app-status-bar-style"');
     this.meta.removeTag('name="msapplication-starturl"');
-  }
-
-  toTop() {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 0);
   }
 }
