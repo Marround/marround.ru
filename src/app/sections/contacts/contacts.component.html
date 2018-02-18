@@ -9,26 +9,31 @@
           <div class="col-12">
             <div class="row">
               <div class="col border border-dark mr-xl-2 mr-lg-2 mr-md-2 fb-bkg">
-                <mat-list role="list">
+                <mat-list role="list" itemscope itemtype="http://schema.org/Organization">
+                  <span itemprop="name" class="d-none">Marround</span>
+                  <mat-list-item role="listitem" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <mat-icon>home</mat-icon>
+                    <span><span itemprop="addressRegion"> Белгородская обл.,</span> <span itemprop="addressLocality"> г. Белгород,</span> <span itemprop="streetAddress"> Королёва, 2А</span></span>
+                  </mat-list-item>
                   <mat-list-item role="listitem">
                     <mat-icon>smartphone</mat-icon>
-                    <a href="tel:89202055125" target="_blank" class="fb-link" rel="nofollow">8 (920) 205-51-25</a>
+                    <a href="tel:89202055125" itemprop="telephone" target="_blank" rel="nofollow">8 (920) 205-51-25</a>
                   </mat-list-item>
                   <mat-list-item role="listitem">
                     <img src="/assets/img/icons/telegram.png" width="24">
-                    <a href="https://t.me/marround" target="_blank" class="fb-link" rel="nofollow">Telegram: @marround</a>
+                    <a href="https://t.me/marround" target="_blank" rel="nofollow">Telegram: @marround</a>
                   </mat-list-item>
                   <mat-list-item role="listitem">
                     <img src="/assets/img/icons/skype.png" width="24">
-                    <a href="skype:marround?call" class="fb-link" rel="nofollow">Skype:marround</a>
+                    <a href="skype:marround?call" rel="nofollow">Skype: marround</a>
                   </mat-list-item>
                   <mat-list-item role="listitem">
                     <img src="/assets/img/icons/vk.png" width="24">
-                    <a href="https://vk.com/marround" class="fb-link" target="_blank" rel="nofollow">vk.com/marround</a>
+                    <a href="https://vk.com/marround" target="_blank" rel="nofollow">vk.com/marround</a>
                   </mat-list-item>
                   <mat-list-item>
                     <mat-icon>query_builder</mat-icon>
-                    <a class="fb-link">ПН-ПТ: 09:00 - 18:00</a>
+                    <time itemprop="openingHours" datetime="Mo-Fr 09:00−18:00"> пн.-пт. 09:00−18:00</time>
                   </mat-list-item>
                 </mat-list>
                 <div class="fb-notice">

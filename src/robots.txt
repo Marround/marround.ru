@@ -1,10 +1,7 @@
 User-agent: *
-Allow: /
-Allow: /services/*
-Disallow: /services&
+Allow: /*
 Disallow: /assets/
-Allow: /assets/sitemap/index.xml
 
-Sitemap: http://marround.ru/assets/sitemap/index.xml
+Sitemap: http://marround.ru/sitemap.xml
 
 Host: marround.ru

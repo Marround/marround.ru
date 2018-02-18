@@ -19,10 +19,11 @@ video{
   overflow:hidden;
   margin: -52px 0 0 0;
 }
-a {
+a{
   color: #222222;
   margin-left: 10px;
 }
+
 .mcmh {
   min-height: calc(100vh - 154px);
   width: 100%;

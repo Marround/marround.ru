@@ -1,14 +1,14 @@
 <mat-drawer-container class="sn-container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side" opened="true">
-    <div class="list-group">
-      <a class="list-group-item list-group-item-action" routerLink="/services/price" routerLinkActive="active">Прайс</a>
-      <a class="list-group-item list-group-item-action" routerLink="/services/landingpage" routerLinkActive="active">Лэндинг-пэйдж</a>
-      <a class="list-group-item list-group-item-action" routerLink="/services/spa" routerLinkActive="active">SPA (Сингл-пэйдж)</a>
-      <a class="list-group-item list-group-item-action" routerLink="/services/sitecutaway" routerLinkActive="active">Сайт визитка</a>
-      <a class="list-group-item list-group-item-action" routerLink="/services/sitecatalog" routerLinkActive="active">Сайт каталог</a>
-      <a class="list-group-item list-group-item-action" routerLink="/services/standard" routerLinkActive="active">Сопровождение - Standard</a>
-      <a class="list-group-item list-group-item-action" routerLink="/services/allinclusive" routerLinkActive="active">Сопровождение - All inclusive</a>
-      <a class="list-group-item list-group-item-action" routerLink="/services/seo" routerLinkActive="active">SEO</a>
+    <div class="list-group" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <a class="list-group-item list-group-item-action" routerLink="/services/price" routerLinkActive="active" itemprop="url">Прайс</a>
+      <a class="list-group-item list-group-item-action" routerLink="/services/landingpage" routerLinkActive="active" itemprop="url">Лэндинг-пэйдж</a>
+      <a class="list-group-item list-group-item-action" routerLink="/services/spa" routerLinkActive="active" itemprop="url">SPA (Сингл-пэйдж)</a>
+      <a class="list-group-item list-group-item-action" routerLink="/services/sitecutaway" routerLinkActive="active" itemprop="url">Сайт визитка</a>
+      <a class="list-group-item list-group-item-action" routerLink="/services/sitecatalog" routerLinkActive="active" itemprop="url">Сайт каталог</a>
+      <a class="list-group-item list-group-item-action" routerLink="/services/standard" routerLinkActive="active" itemprop="url">Сопровождение - Standard</a>
+      <a class="list-group-item list-group-item-action" routerLink="/services/allinclusive" routerLinkActive="active" itemprop="url">Сопровождение - All inclusive</a>
+      <a class="list-group-item list-group-item-action" routerLink="/services/seo" routerLinkActive="active" itemprop="url">SEO</a>
     </div>
 
   </mat-drawer>
