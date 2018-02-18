@@ -11,9 +11,8 @@ declare let $: any;
 export class DomainnameComponent implements OnInit {
 
   constructor(private title: Title, private meta: Meta) {
-    this.title.setTitle('Домен - услуги - Marround - частный вэб мастер - Белгород');
-    this.meta.updateTag({name: 'keywords', content: 'Marround, частный вэб мастер, Белгород'});
-    this.meta.updateTag({name: 'description', content: ''});
+    this.title.setTitle('Домен - услуги - Marround');
+    this.meta.updateTag({name: 'description', content: '☑ '});
   }
 
   ngOnInit() {
