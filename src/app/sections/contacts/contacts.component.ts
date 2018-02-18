@@ -31,6 +31,7 @@ export class ContactsComponent implements OnInit, OnDestroy {
     });
     this.meta.updateTag({property: 'og:type', content: 'website'});
     this.meta.updateTag({property: 'og:url', content: 'http://marround.ru/contacts'});
+    this.meta.updateTag({property: 'og:image', content: 'http://marround.ru/assets/img/contacts.png'});
     this.meta.updateTag({property: 'og:site_name', content: 'Marround'});
 
     this.meta.updateTag({name: 'mobile-web-app-capable', content: 'yes'});
